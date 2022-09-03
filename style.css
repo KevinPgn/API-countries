@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #202D36;
+}
+
+header{
+    background-color: #2B3743;
+    padding: 40px 60px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container{
+    max-width: 1500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    position: relative;
+    width: 100%;
+}
+
+.container .top .search{
+    width: 550px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0 70px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background: #2B3743;
+    outline: none;   
+}
+
+.container .top .glass{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.container .top select{
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background: #2B3743;
+    outline: none;   
+}
+
+@media screen and (max-width: 700px){
+    .container .top .search{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container .top{
+        flex-direction: column;
+    }
+    .container .top .search{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container .top select{
+        width: 100%;
+    }
+    
+    .container .glass{
+        display: none;
+    }
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 70px 0;
+}
+
+.content .country{
+    width: 310px;
+    height: 400px;
+    background-color: #2B3743;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.content .country img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content .country{
+    color: white;
+    border-radius: 5px;
+}
+
+.content .country h3{
+    margin: 10px 0 20px 0;
+}
+
+.content .country p{
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.content .country span{
+    font-weight: bold;
+}
+
+.content .country-info{
+    padding: 20px;
+}
+
+.submit{
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2B3743;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    margin: 10px 0;
+}
+
+.modal-content{
+    display: none;
+}
+
+.modal.show-modal .modal-content{
+    width: 100%;
+    margin: 70px 0;
+    height: 852px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 50px;
+    left: 0;
+    display: flex;
+    background-color: #2B3743;
+}
+
+h2{
+    color: white;
+    margin-top: 20px;
+}
+
+.modal-content img{
+    width: 700px;
+    object-fit: cover;
+}
+
+.modal-content p{
+    color: white;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.modal-content .remove{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    padding: 20px;
+    cursor: pointer;
+    background: #202D36;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1000px){
+    .modal-content img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .modal-content img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .modal-content{
+        flex-direction: column;
+    }
+
+    .modal-content img{
+        margin: 50px 0 0 0;
+    }
+
+    .modal-content h2{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .modal-content img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .content{
+        justify-content: center;
+    }
+}
