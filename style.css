@@ -207,12 +207,12 @@ h2{
     .modal-content img{
         width: 400px;
     }
-    
+
     .modal{
         overflow-y: scroll;
     }
-    
-    .modal .modal-content{
+
+    .modal-content{
         overflow-y: scroll;
     }
 }
